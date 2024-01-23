@@ -1,13 +1,27 @@
+/*---- the * symbol select everything so this is a global rule and should be used sparingly.-----*/
 * {
 	margin: 0px;
 	padding: 0px;
 }
+
+/*---- utility styles ----*/
+.img-right{
+    float:right;
+    margin: 10px 0 10px 20px;
+    border: 4px solid #fff;
+    padding: 5px;
+}
+
+/*----- global styles ------*/
+
 body {
 	text-align: center;
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	background-color: #171717;
 	font-size: 16px;
 	line-height: 1.5em;
+	background-image: url("../img/bg-tile.jpg");
+	background-repeat: repeat-x;
 }
 #container {
 	max-width: 800px;
@@ -19,8 +33,19 @@ body {
 	border: 1px solid #CCC;
 }
 #header {
+	background-image: url("../img/header.jpg");
+	background-repeat: no-repeat;
+	height: 140px;
+}
+#header h1 {
+	height: 100%;
 }
 #header h1 a {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	display: block;
+	height: 100%;
 }
 #nav {
 	background-color: #000;
@@ -55,12 +80,29 @@ body {
 #content {
 	margin: 20px;
 }
+#content h2 {
+	color: #486f52;
+	font-size: 1.8em;
+}
+#content h3 {
+	color: #014047;
+	font-size: 1.6em;
+}
+#content h4 {
+	color: #000120;
+	font-size: 1.2em;
+}
 #content p {
 	margin-top: 5px;
 	margin-bottom: 15px;
 }
+#content p.alert {
+	background-color: #cce0dd;
+	color: #000120;
+	padding: 1em;
+}
 #footer {
-	background-color: #000;
+	background-color: #000120;
 	color: #FFF;
 	height: 25px;
 }
@@ -69,4 +111,8 @@ body {
 	line-height: 25px;
 	margin-right: 20px;
 	margin-left: 20px;
+}
+
+#footer h6 a {
+	color: #fff;
 }
